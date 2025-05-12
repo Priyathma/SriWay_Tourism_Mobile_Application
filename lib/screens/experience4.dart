@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Place4 extends StatefulWidget {
-  const Place4({super.key});
+class Experience4 extends StatefulWidget {
+  const Experience4({super.key});
 
   @override
-  _PlaceDetail4PageState createState() => _PlaceDetail4PageState();
+  _Experience4PageState createState() => _Experience4PageState();
 }
 
-class _PlaceDetail4PageState extends State<Place4> {
+class _Experience4PageState extends State<Experience4> {
   bool _isExpanded = false; // To handle 'See More' functionality
   int _currentIndex = 0; // For tracking the current index in the PageView
 
@@ -50,10 +50,10 @@ class _PlaceDetail4PageState extends State<Place4> {
                 itemBuilder: (context, index) {
                   // List of image assets
                   List<String> images = [
-                    'assets/images/Sigiriya1.jpg',
-                    'assets/images/Sigiriya2.jpg',
-                    'assets/images/Sigiriya3.jpg',
-                    'assets/images/Sigiriya4.jpeg',
+                    'assets/images/scuba1.jpg',
+                    'assets/images/scuba2.jpg',
+                    'assets/images/scuba3.jpg',
+                    'assets/images/scuba4.jpg',
                   ];
 
                   return Image.asset(
@@ -95,7 +95,7 @@ class _PlaceDetail4PageState extends State<Place4> {
                   Icon(Icons.location_on, color: Colors.blue),
                   SizedBox(width: 1),
                   Text(
-                    'Sigiriya, Sri Lanka',
+                    'Cultural Tour in Kandy',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                 ],
@@ -180,12 +180,14 @@ class _PlaceDetail4PageState extends State<Place4> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(
-                'Sigiriya, often referred to as the Lion’s Rock, is one of Sri Lanka’s most iconic and historically significant landmarks. Located in the central Matale District, it is a massive rock fortress that rises about 200 meters (660 feet) above the surrounding plains. Sigiriya is a UNESCO World Heritage site, famous for its breathtaking views, ancient ruins, and the rich history embedded in its walls. The fortress was built by King Kasyapa I in the 5th century AD and served as his royal capital. According to legend, the king, who usurped the throne from his father, built the fortress as a safe haven and stronghold to protect himself from his enemies. The rock was chosen because of its strategic location and sheer height, making it almost impregnable. The site is an impressive combination of palaces, gardens, water features, and fortifications, all designed with great precision.\n\n'
-                'One of the most striking features of Sigiriya is its Lion’s Gate, which once had a giant lions head sculpture, giving the rock its name. Visitors still ascend the rock via a staircase that passes through the remnants of the lion’s paws, symbolizing the entry to the king’s private realm. The Mirror Wall is another fascinating aspect of the site; it was originally so polished that the king could see his reflection in it, and today, visitors can still see ancient graffiti left by travelers over the centuries.\n\n'
-                'The Sigiriya frescoes are another highlight, featuring vibrant, ancient paintings of naked women, believed to be apsaras (celestial nymphs). These paintings, along with the gardens and water fountains, showcase the advanced engineering and artistic skills of the ancient Sri Lankans. The frescoes are a testament to the vibrant artistic culture of the period and add a layer of cultural depth to the site.\n\n'
-                'In addition to the rock fortress, the surrounding Sigiriya archaeological site includes the royal gardens, which are among the oldest landscaped gardens in the world. The gardens, including the water gardens, terraces, and pools, reflect the highly sophisticated engineering and planning techniques of the ancient civilization.\n\n'
-                'Sigiriya is not only a place of historical and architectural significance but also a cultural symbol of Sri Lanka’s heritage. Its history, combined with its stunning natural beauty, makes it one of the top tourist destinations in Sri Lanka. Visitors come to explore the ruins, marvel at the views, and gain a deeper understanding of the country’s ancient history.\n\n'
-                'Visiting Sigiriya is a journey back in time, offering insights into the history, culture, and engineering genius of ancient Sri Lanka. Whether you are a history enthusiast, an art lover, or simply someone looking to experience one of the most beautiful places in the world, Sigiriya should be at the top of your list when traveling through Sri Lanka.',
+                'A Cultural Tour in Kandy offers an immersive experience into Sri Lanka’s rich heritage, historical landmarks, and spiritual traditions. Located in the central part of the island, Kandy is Sri Lanka’s cultural capital and was the last capital of the ancient kings of Sri Lanka. This UNESCO World Heritage city is home to some of the most iconic sites in the country, from ancient temples to botanical gardens, making it a must-visit destination for travelers interested in the history and culture of Sri Lanka.\n\n'
+                'The Temple of the Tooth (Sri Dalada Maligawa) is the highlight of Kandy’s cultural attractions. This sacred temple houses the relic of the tooth of the Buddha, one of the most revered relics in Sri Lanka. The temple’s history dates back to the 16th century, and it has played a central role in the country’s religious and political life. Visiting the temple gives visitors a chance to witness the rituals and ceremonies associated with this sacred relic and learn about its significance in Sri Lankan Buddhism.\n\n'
+                'Another important stop on a cultural tour in Kandy is the Royal Palace Complex, which once served as the home of Sri Lanka’s last monarchs. The palace is a testament to the grandeur and architectural brilliance of the Kandyan Kingdom. Nearby, you can explore the Kandy National Museum, which houses historical artifacts, royal regalia, and ancient artworks that showcase the kingdom’s cultural heritage.\n\n'
+                'The Kandy Esala Perahera, held annually in July or August, is one of Sri Lanka’s most spectacular cultural events. The procession, which honors the Sacred Tooth Relic, features decorated elephants, traditional dancers, drummers, and fire-breathers. The Kandy Esala Perahera is a grand display of Sri Lankan tradition and a visual feast for those who visit during the festival period.\n\n'
+                'For nature lovers and those interested in the flora of the region, the Royal Botanical Gardens in Peradeniya is a must-visit. Located just outside the city, the gardens are home to an impressive collection of tropical plants, including orchids, palm trees, and herb gardens. The gardens offer a peaceful escape from the hustle and bustle of the city, with scenic walking paths and well-maintained grounds.\n\n'
+                'A cultural tour in Kandy also provides the opportunity to explore the city’s local markets, where you can purchase traditional crafts, batik textiles, and wooden carvings. The markets are an excellent place to witness the daily life of the locals and to buy unique souvenirs.\n\n'
+                'Visitor Tips: Kandy is a hill city, so it’s recommended to wear comfortable walking shoes as you explore its temples, gardens, and markets. Be respectful of the religious sites by dressing modestly (shoulders and knees covered) and removing shoes when entering temples. If you visit during the Kandy Esala Perahera, be prepared for large crowds, but it’s an experience not to be missed.\n\n'
+                'Overall, a Cultural Tour in Kandy offers a rich and rewarding experience that provides deep insights into the history, culture, and spirituality of Sri Lanka. With its ancient temples, royal palaces, cultural festivals, and lush gardens, Kandy is a city that will captivate you with its beauty and historical significance.',
                 style: const TextStyle(
                   fontSize: 16,
                   color: Color.fromARGB(255, 49, 49, 49),
@@ -200,6 +202,7 @@ class _PlaceDetail4PageState extends State<Place4> {
                             .ellipsis, // Show "See More" when truncated
               ),
             ),
+
             const SizedBox(height: 10),
             Align(
               alignment: Alignment.centerLeft,

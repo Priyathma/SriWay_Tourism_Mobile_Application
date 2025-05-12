@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Place4 extends StatefulWidget {
-  const Place4({super.key});
+class Experience2 extends StatefulWidget {
+  const Experience2({super.key});
 
   @override
-  _PlaceDetail4PageState createState() => _PlaceDetail4PageState();
+  _Experience2PageState createState() => _Experience2PageState();
 }
 
-class _PlaceDetail4PageState extends State<Place4> {
+class _Experience2PageState extends State<Experience2> {
   bool _isExpanded = false; // To handle 'See More' functionality
   int _currentIndex = 0; // For tracking the current index in the PageView
 
@@ -50,10 +50,10 @@ class _PlaceDetail4PageState extends State<Place4> {
                 itemBuilder: (context, index) {
                   // List of image assets
                   List<String> images = [
-                    'assets/images/Sigiriya1.jpg',
-                    'assets/images/Sigiriya2.jpg',
-                    'assets/images/Sigiriya3.jpg',
-                    'assets/images/Sigiriya4.jpeg',
+                    'assets/images/mirissa1.jpg',
+                    'assets/images/mirissa2.jpg',
+                    'assets/images/mirissa3.jpg',
+                    'assets/images/mirissa4.jpg',
                   ];
 
                   return Image.asset(
@@ -95,7 +95,7 @@ class _PlaceDetail4PageState extends State<Place4> {
                   Icon(Icons.location_on, color: Colors.blue),
                   SizedBox(width: 1),
                   Text(
-                    'Sigiriya, Sri Lanka',
+                    'Whale Watching in Mirissa',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                 ],
@@ -180,12 +180,14 @@ class _PlaceDetail4PageState extends State<Place4> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(
-                'Sigiriya, often referred to as the Lion’s Rock, is one of Sri Lanka’s most iconic and historically significant landmarks. Located in the central Matale District, it is a massive rock fortress that rises about 200 meters (660 feet) above the surrounding plains. Sigiriya is a UNESCO World Heritage site, famous for its breathtaking views, ancient ruins, and the rich history embedded in its walls. The fortress was built by King Kasyapa I in the 5th century AD and served as his royal capital. According to legend, the king, who usurped the throne from his father, built the fortress as a safe haven and stronghold to protect himself from his enemies. The rock was chosen because of its strategic location and sheer height, making it almost impregnable. The site is an impressive combination of palaces, gardens, water features, and fortifications, all designed with great precision.\n\n'
-                'One of the most striking features of Sigiriya is its Lion’s Gate, which once had a giant lions head sculpture, giving the rock its name. Visitors still ascend the rock via a staircase that passes through the remnants of the lion’s paws, symbolizing the entry to the king’s private realm. The Mirror Wall is another fascinating aspect of the site; it was originally so polished that the king could see his reflection in it, and today, visitors can still see ancient graffiti left by travelers over the centuries.\n\n'
-                'The Sigiriya frescoes are another highlight, featuring vibrant, ancient paintings of naked women, believed to be apsaras (celestial nymphs). These paintings, along with the gardens and water fountains, showcase the advanced engineering and artistic skills of the ancient Sri Lankans. The frescoes are a testament to the vibrant artistic culture of the period and add a layer of cultural depth to the site.\n\n'
-                'In addition to the rock fortress, the surrounding Sigiriya archaeological site includes the royal gardens, which are among the oldest landscaped gardens in the world. The gardens, including the water gardens, terraces, and pools, reflect the highly sophisticated engineering and planning techniques of the ancient civilization.\n\n'
-                'Sigiriya is not only a place of historical and architectural significance but also a cultural symbol of Sri Lanka’s heritage. Its history, combined with its stunning natural beauty, makes it one of the top tourist destinations in Sri Lanka. Visitors come to explore the ruins, marvel at the views, and gain a deeper understanding of the country’s ancient history.\n\n'
-                'Visiting Sigiriya is a journey back in time, offering insights into the history, culture, and engineering genius of ancient Sri Lanka. Whether you are a history enthusiast, an art lover, or simply someone looking to experience one of the most beautiful places in the world, Sigiriya should be at the top of your list when traveling through Sri Lanka.',
+                'Whale Watching in Mirissa is one of the top attractions for nature lovers and adventure seekers visiting Sri Lanka. Located on the southern coast of Sri Lanka, Mirissa offers one of the best opportunities in the world to spot **blue whales**, **sperm whales**, and various species of dolphins. With crystal-clear waters and rich marine life, the region offers a thrilling experience for those looking to witness these magnificent creatures in their natural habitat.\n\n'
+                'Mirissa is located on the **southwestern waters** of Sri Lanka, which is along the migratory routes of the **blue whale**, the largest animal on the planet. This makes Mirissa a prime location for spotting blue whales year-round, particularly between **November and April**. During this period, calm seas and good visibility provide the best conditions for sightings.\n\n'
+                'Whale species you can spot include **blue whales**, **sperm whales**, **fin whales**, and **humpback whales**. The waters around Mirissa are also home to several species of dolphins, including **spinner dolphins** and **bottlenose dolphins**, who often travel in large, playful pods. These dolphins add a fun and lively element to the whale-watching experience.\n\n'
+                'The best time for whale watching in Mirissa is during the early morning, with tours typically departing around **6:00 AM**. Whale watching tours last for about **3 to 4 hours**, and visitors are treated to a once-in-a-lifetime opportunity to see these majestic creatures in the wild. During the tour, you may witness **whale spouts**, flukes (tails), and sometimes, full breaches and tail slaps, creating unforgettable memories.\n\n'
+                'Many eco-friendly and responsible tour operators in Mirissa ensure that whale watching is conducted ethically and sustainably. They follow guidelines to keep a safe distance from the animals and ensure that no harm comes to the marine life.\n\n'
+                'In addition to whale watching, Mirissa is a beautiful place to relax. **Mirissa Beach** offers soft golden sands, turquoise waters, and a serene atmosphere. Visitors can also enjoy other activities such as **snorkeling**, **scuba diving**, and **fishing** around the area, making Mirissa a perfect combination of adventure and relaxation.\n\n'
+                'Visitor Tips: The whale-watching tours in Mirissa typically depart at **6:00 AM**, so it’s recommended to arrive at the harbor early. Wear comfortable clothing, bring sunscreen, a hat, and a camera for the trip. If you’re prone to seasickness, it’s advisable to take motion sickness tablets before the trip. Bring plenty of water, and stay hydrated throughout the tour.\n\n'
+                'Overall, whale watching in Mirissa offers one of the most unforgettable wildlife experiences, combining the thrill of seeing whales in their natural environment with the beauty of Sri Lanka’s southern coast. It’s an essential activity for nature enthusiasts and adventure travelers alike.',
                 style: const TextStyle(
                   fontSize: 16,
                   color: Color.fromARGB(255, 49, 49, 49),
@@ -200,6 +202,7 @@ class _PlaceDetail4PageState extends State<Place4> {
                             .ellipsis, // Show "See More" when truncated
               ),
             ),
+
             const SizedBox(height: 10),
             Align(
               alignment: Alignment.centerLeft,

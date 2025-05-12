@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Place4 extends StatefulWidget {
-  const Place4({super.key});
+class Experience3 extends StatefulWidget {
+  const Experience3({super.key});
 
   @override
-  _PlaceDetail4PageState createState() => _PlaceDetail4PageState();
+  _Experience3PageState createState() => _Experience3PageState();
 }
 
-class _PlaceDetail4PageState extends State<Place4> {
+class _Experience3PageState extends State<Experience3> {
   bool _isExpanded = false; // To handle 'See More' functionality
   int _currentIndex = 0; // For tracking the current index in the PageView
 
@@ -50,10 +50,10 @@ class _PlaceDetail4PageState extends State<Place4> {
                 itemBuilder: (context, index) {
                   // List of image assets
                   List<String> images = [
-                    'assets/images/Sigiriya1.jpg',
-                    'assets/images/Sigiriya2.jpg',
-                    'assets/images/Sigiriya3.jpg',
-                    'assets/images/Sigiriya4.jpeg',
+                    'assets/images/scuba1.jpg',
+                    'assets/images/scuba2.jpg',
+                    'assets/images/scuba3.jpg',
+                    'assets/images/scuba4.jpg',
                   ];
 
                   return Image.asset(
@@ -95,7 +95,7 @@ class _PlaceDetail4PageState extends State<Place4> {
                   Icon(Icons.location_on, color: Colors.blue),
                   SizedBox(width: 1),
                   Text(
-                    'Sigiriya, Sri Lanka',
+                    'Scuba Diving in Hikkaduwa',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                 ],
@@ -180,12 +180,17 @@ class _PlaceDetail4PageState extends State<Place4> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(
-                'Sigiriya, often referred to as the Lion’s Rock, is one of Sri Lanka’s most iconic and historically significant landmarks. Located in the central Matale District, it is a massive rock fortress that rises about 200 meters (660 feet) above the surrounding plains. Sigiriya is a UNESCO World Heritage site, famous for its breathtaking views, ancient ruins, and the rich history embedded in its walls. The fortress was built by King Kasyapa I in the 5th century AD and served as his royal capital. According to legend, the king, who usurped the throne from his father, built the fortress as a safe haven and stronghold to protect himself from his enemies. The rock was chosen because of its strategic location and sheer height, making it almost impregnable. The site is an impressive combination of palaces, gardens, water features, and fortifications, all designed with great precision.\n\n'
-                'One of the most striking features of Sigiriya is its Lion’s Gate, which once had a giant lions head sculpture, giving the rock its name. Visitors still ascend the rock via a staircase that passes through the remnants of the lion’s paws, symbolizing the entry to the king’s private realm. The Mirror Wall is another fascinating aspect of the site; it was originally so polished that the king could see his reflection in it, and today, visitors can still see ancient graffiti left by travelers over the centuries.\n\n'
-                'The Sigiriya frescoes are another highlight, featuring vibrant, ancient paintings of naked women, believed to be apsaras (celestial nymphs). These paintings, along with the gardens and water fountains, showcase the advanced engineering and artistic skills of the ancient Sri Lankans. The frescoes are a testament to the vibrant artistic culture of the period and add a layer of cultural depth to the site.\n\n'
-                'In addition to the rock fortress, the surrounding Sigiriya archaeological site includes the royal gardens, which are among the oldest landscaped gardens in the world. The gardens, including the water gardens, terraces, and pools, reflect the highly sophisticated engineering and planning techniques of the ancient civilization.\n\n'
-                'Sigiriya is not only a place of historical and architectural significance but also a cultural symbol of Sri Lanka’s heritage. Its history, combined with its stunning natural beauty, makes it one of the top tourist destinations in Sri Lanka. Visitors come to explore the ruins, marvel at the views, and gain a deeper understanding of the country’s ancient history.\n\n'
-                'Visiting Sigiriya is a journey back in time, offering insights into the history, culture, and engineering genius of ancient Sri Lanka. Whether you are a history enthusiast, an art lover, or simply someone looking to experience one of the most beautiful places in the world, Sigiriya should be at the top of your list when traveling through Sri Lanka.',
+                'Scuba Diving in Hikkaduwa is one of the most popular underwater adventures in Sri Lanka. Located on the southwestern coast of the island, Hikkaduwa is renowned for its **vibrant coral reefs**, **clear waters**, and diverse marine life, making it a perfect destination for diving enthusiasts. Whether you are a beginner or an experienced diver, Hikkaduwa offers an exciting and unforgettable diving experience.\n\n'
+                'Hikkaduwa’s dive sites are home to an incredible variety of **marine life**, including **sea turtles**, **tropical fish**, **moray eels**, and **rays**. The waters around Hikkaduwa are rich in marine biodiversity, with beautiful coral gardens and vibrant underwater landscapes. The coral reefs in this area are some of the most well-preserved in Sri Lanka, providing a colorful and dynamic environment for divers to explore.\n\n'
+                'The best time to go scuba diving in Hikkaduwa is during the **dry season**, from **November to April**, when the sea conditions are calm, and visibility is at its peak. The water temperature is ideal, ranging from **27°C to 29°C (80°F to 84°F)**, offering a comfortable environment for diving.\n\n'
+                'Some of the top dive sites in Hikkaduwa include:\n'
+                '- **Hikkaduwa Coral Gardens**: Known for its vibrant coral reefs and abundance of fish species. Perfect for both beginners and experienced divers.\n'
+                '- **Nylon Reef**: A deeper dive site where divers can spot **large schools of fish**, **sea turtles**, and even **reef sharks**.\n'
+                '- **The Wreck of the Conch**: A popular wreck dive site, where you can explore a sunken ship that has become a habitat for various marine species.\n'
+                'These dive sites offer opportunities for divers of all levels to experience the beauty of Hikkaduwa’s marine world.\n\n'
+                'In addition to scuba diving, **snorkeling** is another great way to explore the waters of Hikkaduwa. The shallow reefs are perfect for snorkeling, allowing visitors to observe the underwater life from the surface. **Scuba diving** provides a deeper and more immersive experience, where you can explore the vibrant coral gardens and get up close with the marine life.\n\n'
+                'Visitor Tips: When scuba diving in Hikkaduwa, it’s recommended to book your dive trips in advance, especially during peak seasons. Wear comfortable clothing, a hat, and sunscreen, as you’ll likely spend time on the boat before and after your dive. Bring a **camera** to capture the stunning underwater scenery and **binoculars** for potential sightings of dolphins or larger fish species. If you’re prone to seasickness, taking **motion sickness medication** before your trip is advisable. Don’t forget to stay hydrated throughout the day.\n\n'
+                'Overall, scuba diving in Hikkaduwa offers an incredible opportunity to explore Sri Lanka’s vibrant underwater world. With its beautiful coral reefs, rich marine life, and ideal diving conditions, Hikkaduwa is an essential destination for any diving enthusiast visiting Sri Lanka.',
                 style: const TextStyle(
                   fontSize: 16,
                   color: Color.fromARGB(255, 49, 49, 49),
@@ -200,6 +205,7 @@ class _PlaceDetail4PageState extends State<Place4> {
                             .ellipsis, // Show "See More" when truncated
               ),
             ),
+
             const SizedBox(height: 10),
             Align(
               alignment: Alignment.centerLeft,

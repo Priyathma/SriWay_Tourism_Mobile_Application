@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Place4 extends StatefulWidget {
-  const Place4({super.key});
+class Experience1 extends StatefulWidget {
+  const Experience1({super.key});
 
   @override
-  _PlaceDetail4PageState createState() => _PlaceDetail4PageState();
+  _Experience1PageState createState() => _Experience1PageState();
 }
 
-class _PlaceDetail4PageState extends State<Place4> {
+class _Experience1PageState extends State<Experience1> {
   bool _isExpanded = false; // To handle 'See More' functionality
   int _currentIndex = 0; // For tracking the current index in the PageView
 
@@ -50,10 +50,10 @@ class _PlaceDetail4PageState extends State<Place4> {
                 itemBuilder: (context, index) {
                   // List of image assets
                   List<String> images = [
-                    'assets/images/Sigiriya1.jpg',
-                    'assets/images/Sigiriya2.jpg',
-                    'assets/images/Sigiriya3.jpg',
-                    'assets/images/Sigiriya4.jpeg',
+                    'assets/images/safari1.jpg',
+                    'assets/images/safari2.jpg',
+                    'assets/images/safari3.jpg',
+                    'assets/images/safari4.jpg',
                   ];
 
                   return Image.asset(
@@ -95,7 +95,7 @@ class _PlaceDetail4PageState extends State<Place4> {
                   Icon(Icons.location_on, color: Colors.blue),
                   SizedBox(width: 1),
                   Text(
-                    'Sigiriya, Sri Lanka',
+                    'Safari in Yala National Park',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                 ],
@@ -180,12 +180,14 @@ class _PlaceDetail4PageState extends State<Place4> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(
-                'Sigiriya, often referred to as the Lion’s Rock, is one of Sri Lanka’s most iconic and historically significant landmarks. Located in the central Matale District, it is a massive rock fortress that rises about 200 meters (660 feet) above the surrounding plains. Sigiriya is a UNESCO World Heritage site, famous for its breathtaking views, ancient ruins, and the rich history embedded in its walls. The fortress was built by King Kasyapa I in the 5th century AD and served as his royal capital. According to legend, the king, who usurped the throne from his father, built the fortress as a safe haven and stronghold to protect himself from his enemies. The rock was chosen because of its strategic location and sheer height, making it almost impregnable. The site is an impressive combination of palaces, gardens, water features, and fortifications, all designed with great precision.\n\n'
-                'One of the most striking features of Sigiriya is its Lion’s Gate, which once had a giant lions head sculpture, giving the rock its name. Visitors still ascend the rock via a staircase that passes through the remnants of the lion’s paws, symbolizing the entry to the king’s private realm. The Mirror Wall is another fascinating aspect of the site; it was originally so polished that the king could see his reflection in it, and today, visitors can still see ancient graffiti left by travelers over the centuries.\n\n'
-                'The Sigiriya frescoes are another highlight, featuring vibrant, ancient paintings of naked women, believed to be apsaras (celestial nymphs). These paintings, along with the gardens and water fountains, showcase the advanced engineering and artistic skills of the ancient Sri Lankans. The frescoes are a testament to the vibrant artistic culture of the period and add a layer of cultural depth to the site.\n\n'
-                'In addition to the rock fortress, the surrounding Sigiriya archaeological site includes the royal gardens, which are among the oldest landscaped gardens in the world. The gardens, including the water gardens, terraces, and pools, reflect the highly sophisticated engineering and planning techniques of the ancient civilization.\n\n'
-                'Sigiriya is not only a place of historical and architectural significance but also a cultural symbol of Sri Lanka’s heritage. Its history, combined with its stunning natural beauty, makes it one of the top tourist destinations in Sri Lanka. Visitors come to explore the ruins, marvel at the views, and gain a deeper understanding of the country’s ancient history.\n\n'
-                'Visiting Sigiriya is a journey back in time, offering insights into the history, culture, and engineering genius of ancient Sri Lanka. Whether you are a history enthusiast, an art lover, or simply someone looking to experience one of the most beautiful places in the world, Sigiriya should be at the top of your list when traveling through Sri Lanka.',
+                'Safari in Yala National Park is one of the most popular wildlife experiences in Sri Lanka. Located in the southeastern part of the island, Yala is famous for its rich biodiversity, stunning landscapes, and exceptional wildlife. The park is home to a variety of animals, including the elusive **Sri Lankan leopard**, **elephants**, and numerous bird species. Yala offers an unforgettable opportunity to see these magnificent creatures in their natural habitats.\n\n'
+                'Yala National Park covers an area of about **978 square kilometers**, with diverse ecosystems such as **dry forests**, **grasslands**, **wetlands**, and **beachfronts**. This variation in terrain creates ideal habitats for a wide range of wildlife, making Yala a prime location for safaris. The park is renowned for having one of the highest densities of **Sri Lankan leopards** in the world, and it is one of the best places to spot them in the wild.\n\n'
+                'In addition to leopards, Yala is home to a large population of **Sri Lankan elephants**, which can be seen roaming freely in the park. Other notable animals include **wild boars**, **crocodiles**, **water buffalo**, and a variety of **deer**. Yala is also a birdwatcher’s paradise, with over **200 species of birds**, including **eagles**, **pelicans**, and the **Sri Lankan junglefowl** (the national bird of Sri Lanka).\n\n'
+                'The best time to visit Yala for a safari is during the **dry season**, which runs from **February to June**. During this period, animals are more likely to gather around the park’s water sources, making them easier to spot. Early morning and late afternoon safaris are the best times to see wildlife when the animals are most active.\n\n'
+                'The safari experience at Yala usually takes place in **open-top jeeps**. Local guides, who are experts in the park’s wildlife, lead the safaris, ensuring that visitors have the best chance to spot animals while maintaining a respectful distance. During the safari, you can expect to see leopards lounging in the shade, elephants grazing peacefully, and perhaps even a crocodile basking by a waterhole.\n\n'
+                'Yala National Park offers various safari packages, including **morning and afternoon safaris**. The safari can last for **3 to 4 hours**, giving visitors plenty of time to explore the park and take in the breathtaking scenery. Yala’s diverse landscapes and wildlife make it an excellent destination for nature lovers and wildlife photographers.\n\n'
+                'Visitor Tips: Safaris in Yala can get very popular, especially during peak tourist seasons, so it is advisable to book in advance. Wear comfortable clothing, sturdy shoes, and bring sunscreen, a hat, and binoculars for bird watching. The weather can be hot, so be sure to bring plenty of water and stay hydrated during the safari. If you’re planning to photograph wildlife, be sure to bring a good camera with a zoom lens.\n\n'
+                'Overall, a safari in Yala National Park provides an extraordinary opportunity to experience the wildlife of Sri Lanka in a natural setting. Whether you’re a wildlife enthusiast, a photographer, or just looking for an adventurous experience, Yala is an essential destination for anyone visiting Sri Lanka.',
                 style: const TextStyle(
                   fontSize: 16,
                   color: Color.fromARGB(255, 49, 49, 49),
@@ -200,6 +202,7 @@ class _PlaceDetail4PageState extends State<Place4> {
                             .ellipsis, // Show "See More" when truncated
               ),
             ),
+
             const SizedBox(height: 10),
             Align(
               alignment: Alignment.centerLeft,

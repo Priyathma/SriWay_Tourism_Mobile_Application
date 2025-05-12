@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:sriway/screens/Place1.dart';
 import 'package:sriway/screens/Place2.dart';
+import 'package:sriway/screens/experience1.dart';
+import 'package:sriway/screens/experience2.dart';
+import 'package:sriway/screens/experience3.dart';
+import 'package:sriway/screens/experience4.dart';
 import 'package:sriway/screens/flight.dart';
 import 'package:sriway/screens/guide.dart';
 import 'package:sriway/screens/hotel.dart';
@@ -32,8 +36,8 @@ class HomeScreen extends StatelessWidget {
       'rating': '4.7',
     },
     {
-      'title': 'Seegirya',
-      'image': 'assets/images/seegiriya.jpg',
+      'title': 'Sigirya',
+      'image': 'assets/images/Sigiriya1.jpg',
       'country': 'City',
       'rating': '4.6',
     },
@@ -42,27 +46,27 @@ class HomeScreen extends StatelessWidget {
   final List<Map<String, String>> experiences = [
     {
       'title': 'Safari in Yala',
-      'image': 'assets/images/kandy.jpg',
+      'image': 'assets/images/safari1.jpg',
       'description':
           'Experience the thrill of wildlife in Sri Lanka’s \n famous Yala National Park.',
     },
     {
       'title': 'Whale Watching in Mirissa',
-      'image': 'assets/images/kandy.jpg',
+      'image': 'assets/images/mirissa1.jpg',
       'description':
-          'Witness the majestic whales off the coast of \n Mirissa, one of the best whale-watching spots.',
+          'Witness the majestic whales off the coast of \nMirissa, one of the best whale-watching spots.',
     },
     {
       'title': 'Scuba Diving in Hikkaduwa',
-      'image': 'assets/images/kandy.jpg',
+      'image': 'assets/images/scuba1.jpg',
       'description':
-          'Explore the vibrant underwater world in the \n crystal-clear waters of Hikkaduwa.',
+          'Explore the vibrant underwater world in the \ncrystal-clear waters of Hikkaduwa.',
     },
     {
       'title': 'Cultural Tour in Kandy',
       'image': 'assets/images/kandy.jpg',
       'description':
-          'Discover the rich cultural heritage of \n Kandy, including the Temple of the Tooth.',
+          'Discover the rich cultural heritage of \nKandy, including the Temple of the Tooth.',
     },
   ];
 
@@ -187,7 +191,7 @@ class HomeScreen extends StatelessWidget {
                                     const Place3(), // Assuming Place3 is for Kandy
                           ),
                         );
-                      } else if (title == 'Seegirya') {
+                      } else if (title == 'Sigirya') {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -483,39 +487,39 @@ class HomeScreen extends StatelessWidget {
                   return GestureDetector(
                     onTap: () {
                       // Navigate to the respective PlaceDetailPage based on the title
-                      String title = places[index]['title']!;
-                      if (title == 'Temple of Tooth') {
+                      String title = experiences[index]['title']!;
+                      if (title == 'Safari in Yala') {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const Place1(),
+                            builder: (context) => const Experience1(),
                           ),
                         );
-                      } else if (title == 'Galle Fort') {
+                      } else if (title == 'Whale Watching in Mirissa') {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder:
                                 (context) =>
-                                    const Place2(), // Assuming Place2 is for Galle Fort
+                                    const Experience2(), // Assuming Place2 is for Galle Fort
                           ),
                         );
-                      } else if (title == 'Kandy') {
+                      } else if (title == 'Scuba Diving in Hikkaduwa') {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder:
                                 (context) =>
-                                    const Place3(), // Assuming Place3 is for Kandy
+                                    const Experience3(), // Assuming Place3 is for Kandy
                           ),
                         );
-                      } else if (title == 'Seegirya') {
+                      } else if (title == 'Cultural Tour in Kandy') {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder:
                                 (context) =>
-                                    const Place4(), // Assuming Place4 is for Seegirya
+                                    const Experience4(), // Assuming Place4 is for Seegirya
                           ),
                         );
                       }
@@ -533,7 +537,7 @@ class HomeScreen extends StatelessWidget {
                           ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                             child: Image.asset(
-                              places[index]['image']!,
+                              experiences[index]['image']!,
                               fit: BoxFit.cover,
                               height: 150,
                               width: 280,
@@ -542,7 +546,7 @@ class HomeScreen extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Text(
-                              places[index]['title']!,
+                              experiences[index]['title']!,
                               style: const TextStyle(
                                 fontSize: 22,
                                 color: Colors.black,
@@ -555,26 +559,8 @@ class HomeScreen extends StatelessWidget {
                               horizontal: 8.0,
                             ),
                             child: Text(
-                              places[index]['country']!,
+                              experiences[index]['description']!,
                               style: TextStyle(color: Colors.grey[600]),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 8.0,
-                            ),
-                            child: Row(
-                              children: [
-                                const Icon(
-                                  Icons.star,
-                                  color: Colors.amber,
-                                  size: 16,
-                                ),
-                                Text(
-                                  places[index]['rating']!,
-                                  style: TextStyle(color: Colors.grey[600]),
-                                ),
-                              ],
                             ),
                           ),
                         ],
