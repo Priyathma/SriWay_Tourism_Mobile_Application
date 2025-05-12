@@ -13,6 +13,7 @@ import 'package:sriway/screens/map.dart';
 import 'package:sriway/screens/place3.dart';
 import 'package:sriway/screens/place4.dart';
 import 'package:sriway/screens/places.dart';
+import 'package:sriway/screens/profile.dart';
 import 'package:sriway/screens/rental.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -118,9 +119,15 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
+
             IconButton(
               icon: const Icon(Icons.menu, color: Colors.grey),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ProfilePage()),
+                );
+              },
             ),
           ],
         ),

@@ -41,7 +41,7 @@ class _Experience4PageState extends State<Experience4> {
             SizedBox(
               height: 250, // Constrained height
               child: PageView.builder(
-                itemCount: 4, // Set this to the length of your images list
+                itemCount: 3, // Set this to the length of your images list
                 onPageChanged: (index) {
                   setState(() {
                     _currentIndex = index; // Update the current index
@@ -50,10 +50,9 @@ class _Experience4PageState extends State<Experience4> {
                 itemBuilder: (context, index) {
                   // List of image assets
                   List<String> images = [
-                    'assets/images/scuba1.jpg',
-                    'assets/images/scuba2.jpg',
-                    'assets/images/scuba3.jpg',
-                    'assets/images/scuba4.jpg',
+                    'assets/images/ctk1.jpg',
+                    'assets/images/ctk2.jpg',
+                    'assets/images/ctk3.jpg',
                   ];
 
                   return Image.asset(
@@ -71,7 +70,7 @@ class _Experience4PageState extends State<Experience4> {
               padding: const EdgeInsets.only(top: 8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: List.generate(4, (index) {
+                children: List.generate(3, (index) {
                   return Container(
                     margin: const EdgeInsets.symmetric(horizontal: 4.0),
                     width: 10,

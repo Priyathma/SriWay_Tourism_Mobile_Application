@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sriway/screens/Place1.dart';
+import 'package:sriway/screens/Place2.dart';
+import 'package:sriway/screens/place3.dart';
 
 class Places extends StatefulWidget {
   const Places({super.key});
@@ -10,6 +13,24 @@ class Places extends StatefulWidget {
 
 class _PlacesPageState extends State<Places> {
   String selectedFilter = '';
+  void _navigateToDetails(String title) {
+    if (title == 'Temple of Tooth') {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const Place1()),
+      );
+    } else if (title == 'Galle Fort') {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const Place2()),
+      );
+    } else if (title == 'Kandy') {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const Place3()),
+      );
+    }
+  }
 
   // Vehicle Card Widget (same style as Hotel Cards)
   Widget _buildVehicleCard(
@@ -25,7 +46,6 @@ class _PlacesPageState extends State<Places> {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       child: Column(
         children: [
-          // Vehicle Image
           ClipRRect(
             borderRadius: BorderRadius.circular(0),
             child: Image.asset(
@@ -36,7 +56,6 @@ class _PlacesPageState extends State<Places> {
             ),
           ),
           const SizedBox(height: 5),
-          // Vehicle Info
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10.0),
             child: Column(
@@ -67,9 +86,8 @@ class _PlacesPageState extends State<Places> {
             ),
           ),
           const SizedBox(height: 10),
-          // Rent Now Button
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () => _navigateToDetails(name),
             style: ElevatedButton.styleFrom(
               foregroundColor: Colors.white,
               backgroundColor: Colors.blue,
@@ -209,25 +227,25 @@ class _PlacesPageState extends State<Places> {
               child: ListView(
                 children: [
                   _buildVehicleCard(
-                    'Seegiriya Rock Fortress',
-                    'Sigiriya, Sri Lanka',
+                    'Temple of Tooth',
+                    'City Kandy, Sri Lanka',
                     '4.8',
                     '2134 reviews',
-                    'assets/images/g.jpeg', // Replace with your image
+                    'assets/images/dalada.jpg', // Replace with your image
                   ),
                   _buildVehicleCard(
-                    'Seegiriya Rock Fortress',
-                    'Sigiriya, Sri Lanka',
+                    'Galle Fort',
+                    'City Galle, Sri Lanka',
                     '4.6',
                     '1856 reviews',
-                    'assets/images/g.jpeg', // Replace with your image
+                    'assets/images/galle.jpg', // Replace with your image
                   ),
                   _buildVehicleCard(
-                    'Seegiriya Rock Fortress',
-                    'Sigiriya, Sri Lanka',
+                    'Kandy',
+                    'City Kandy, Sri Lanka',
                     '5.0',
                     '500 reviews',
-                    'assets/images/g.jpeg', // Replace with your image
+                    'assets/images/kandy.jpg', // Replace with your image
                   ),
                   // More vehicles can be added here
                 ],
