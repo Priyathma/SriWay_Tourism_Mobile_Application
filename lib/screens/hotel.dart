@@ -2,7 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:geocoding/geocoding.dart'; // Import geocoding package
+import 'package:geocoding/geocoding.dart';
+import 'package:sriway/screens/hotel1.dart';
+import 'package:sriway/screens/hotel2.dart';
+import 'package:sriway/screens/hotel3.dart'; // Import geocoding package
 
 class HotelsPage extends StatefulWidget {
   const HotelsPage({super.key});
@@ -108,6 +111,7 @@ class _HotelsPageState extends State<HotelsPage> {
     String reviews,
     String price,
     String imagePath,
+    Widget hotelPage,
   ) {
     return Card(
       elevation: 3,
@@ -159,7 +163,16 @@ class _HotelsPageState extends State<HotelsPage> {
           const SizedBox(height: 10),
           // Book Now Button
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              // Navigate to the hotel detail page
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder:
+                      (context) => hotelPage, // Navigate to specific hotel page
+                ),
+              );
+            },
             style: ElevatedButton.styleFrom(
               foregroundColor: Colors.white,
               backgroundColor: Colors.blue,
@@ -168,7 +181,7 @@ class _HotelsPageState extends State<HotelsPage> {
               ),
               padding: const EdgeInsets.symmetric(horizontal: 150, vertical: 8),
             ),
-            child: const Text('Book Now', style: TextStyle(fontSize: 14)),
+            child: const Text('See more', style: TextStyle(fontSize: 14)),
           ),
           const SizedBox(height: 10),
         ],
@@ -292,12 +305,13 @@ class _HotelsPageState extends State<HotelsPage> {
               child: ListView(
                 children: [
                   _buildHotelCard(
-                    'Grand Plaza Hotel',
-                    'Manhattan, New York',
+                    'Radisson Blu Resort, Galle',
+                    '523C Galle - Colombo Rd, Galle 80280•0912 030 500',
                     '4.8',
                     '2134 reviews',
                     '\$299',
-                    'assets/images/g.jpeg', // Replace with correct image
+                    'assets/images/hotel1.jpg', // Replace with correct image
+                    const Hotel1Page(), // Navigate to Hotel1Page
                   ),
                   _buildHotelCard(
                     'Riverside Luxury Inn',
@@ -306,6 +320,7 @@ class _HotelsPageState extends State<HotelsPage> {
                     '1856 reviews',
                     '\$249',
                     'assets/images/g.jpeg', // Replace with correct image
+                    const Hotel2Page(), // Navigate to Hotel2Page
                   ),
                   _buildHotelCard(
                     'Riverside Luxury Inn',
@@ -314,6 +329,7 @@ class _HotelsPageState extends State<HotelsPage> {
                     '1856 reviews',
                     '\$249',
                     'assets/images/g.jpeg', // Replace with correct image
+                    const Hotel3Page(), // Navigate to Hotel2Page
                   ),
                   // More hotels can be added here
                 ],

@@ -180,12 +180,10 @@ class _PlaceDetail1PageState extends State<Place1> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(
-                'The Temple of the Tooth (Sri Dalada Maligawa) in Kandy, Sri Lanka, is one of the most significant religious, cultural, and historical sites in the country. Revered by Buddhists around the world, it houses the Sacred Tooth Relic of Buddha, an essential symbol of Buddhism and royal power for centuries. The temple’s rich history dates back to the 16th century and over time, it has become a cultural landmark in Sri Lanka.\n\n'
+                'The Temple of the Tooth (Sri Dalada Maligawa) in Kandy, Sri Lanka, is one of the most significant religious, cultural, and historical sites in the country. Revered by Buddhists around the world, it houses the Sacred Tooth Relic of Buddha, an essential symbol of Buddhism and royal power for centuries.\n\n'
                 'The temple’s architecture is an exquisite example of Kandyan-style design, with intricate carvings, grand pillars, and sacred spaces that enhance its spiritual allure. The inner sanctum, where the tooth relic is stored, is closely guarded and holds deep meaning for Buddhists. This site is considered a key pilgrimage destination for devotees.\n\n'
                 'The Kandy Esala Perahera, an annual procession held in honor of the sacred relic, is one of Sri Lanka’s most spectacular cultural events. Featuring parades of decorated elephants, dancers, drummers, and fire-breathers, this event attracts thousands of visitors and showcases Sri Lankan religious traditions in their most colorful form.\n\n'
-                'A visit to the Temple of the Tooth is not only about admiring its architectural beauty but also connecting with Sri Lanka’s spiritual heritage. Visitors can delve into the island’s royal history and experience the serene surroundings and breathtaking views of Kandy Lake, making it a perfect destination for reflection and tranquility. The continued preservation of this temple relies on income from tourism, making it an integral part of Sri Lanka’s cultural sustainability.\n\n'
-                'Visitor Tips: The temple is open daily from [time] to [time], with an entry fee of [price]. It’s recommended to visit during the early morning or late afternoon to avoid crowds. Remember to dress modestly as it is a religious site. Be respectful of the rituals and ceremonies being conducted.\n\n'
-                'Overall, the Temple of the Tooth offers visitors not only a glimpse into Sri Lanka’s rich spiritual and cultural heritage but also an experience of peace and reflection at the heart of Kandy’s stunning landscape.',
+                'A visit to the Temple of the Tooth is not only about admiring its architectural beauty but also connecting with Sri Lanka’s spiritual heritage. Visitors can delve into the island’s royal history and experience the serene surroundings and breathtaking views of Kandy Lake, making it a perfect destination for reflection and tranquility.',
                 style: const TextStyle(
                   fontSize: 16,
                   color: Color.fromARGB(255, 49, 49, 49),
@@ -240,7 +238,7 @@ class _PlaceDetail1PageState extends State<Place1> {
 
             const SizedBox(height: 20),
 
-            // Action Buttons (Directions, Share)
+            // Action Buttons (Get Directions)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
