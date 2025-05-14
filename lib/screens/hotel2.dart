@@ -36,7 +36,7 @@ class Hotel2Page extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(15.0),
                 child: Image.asset(
-                  'assets/images/g.jpeg', // Replace with your image path
+                  'assets/images/hotel2.jpg', // Replace with your image path
                   fit: BoxFit.cover,
                   height: 250,
                   width: double.infinity,
@@ -49,7 +49,7 @@ class Hotel2Page extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
-                    'Grand Plaza Hotel',
+                    'Kottawatta River Bank Resort',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                   Column(
@@ -69,7 +69,7 @@ class Hotel2Page extends StatelessWidget {
               ),
               const SizedBox(height: 0),
               const Text(
-                'Downtown Manhattan, New York',
+                ' demodaramulla, madyama adaluwa, Udawalawa',
                 style: TextStyle(color: Colors.grey),
               ),
               const SizedBox(height: 20),
@@ -108,19 +108,19 @@ class Hotel2Page extends StatelessWidget {
                 'Standard Double Room',
                 '2 guests 1 bed',
                 '\$299',
-                'assets/images/g.jpeg',
+                'assets/images/hotel21.jpg',
               ),
               _buildRoomOption(
                 'Deluxe King Room',
                 '2 guests 1 king bed',
                 '\$399',
-                'assets/images/g.jpeg',
+                'assets/images/hotel21.jpg',
               ),
               _buildRoomOption(
                 'Executive Suite',
                 '4 guests 2 beds',
                 '\$599',
-                'assets/images/g.jpeg',
+                'assets/images/hotel21.jpg',
               ),
 
               const SizedBox(height: 5),
@@ -157,7 +157,7 @@ class Hotel2Page extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               Image.asset(
-                'assets/images/g.jpeg', // Replace with map image
+                'assets/images/daladamap.png', // Replace with map image
                 fit: BoxFit.cover,
                 height: 150,
                 width: double.infinity,

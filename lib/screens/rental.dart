@@ -192,28 +192,28 @@ class _VehicleRentalPageState extends State<RentalPage> {
               child: ListView(
                 children: [
                   _buildVehicleCard(
-                    'Toyota Corolla',
-                    'Los Angeles, CA',
+                    'Toyota Axio',
+                    'Ella',
                     '4.8',
                     '2134 reviews',
                     '\$299/day',
-                    'assets/images/g.jpeg', // Replace with your image
+                    'assets/images/car1.jpg', // Replace with your image
                   ),
                   _buildVehicleCard(
                     'BMW X5',
-                    'New York, NY',
+                    'Rathnapura',
                     '4.6',
                     '1856 reviews',
                     '\$450/day',
-                    'assets/images/g.jpeg', // Replace with your image
+                    'assets/images/car2.jpg', // Replace with your image
                   ),
                   _buildVehicleCard(
                     'Tesla Model S',
-                    'San Francisco, CA',
+                    'Colombo',
                     '5.0',
                     '500 reviews',
                     '\$800/day',
-                    'assets/images/g.jpeg', // Replace with your image
+                    'assets/images/car3.jpg', // Replace with your image
                   ),
                   // More vehicles can be added here
                 ],

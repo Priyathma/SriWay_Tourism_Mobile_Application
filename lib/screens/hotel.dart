@@ -305,7 +305,7 @@ class _HotelsPageState extends State<HotelsPage> {
               child: ListView(
                 children: [
                   _buildHotelCard(
-                    'Radisson Blu Resort, Galle',
+                    'Radisson Blu Resort',
                     '523C Galle - Colombo Rd, Galle 80280•0912 030 500',
                     '4.8',
                     '2134 reviews',
@@ -314,21 +314,21 @@ class _HotelsPageState extends State<HotelsPage> {
                     const Hotel1Page(), // Navigate to Hotel1Page
                   ),
                   _buildHotelCard(
-                    'Riverside Luxury Inn',
-                    'Brooklyn, New York',
+                    'Kottawatta River Bank Resort',
+                    'CQ4X+P7, Kottawatta river bank , 159/2 , demodaramulla, madyama adaluwa, Udawalawa 70190•074 250 4719',
                     '4.6',
                     '1856 reviews',
                     '\$249',
-                    'assets/images/g.jpeg', // Replace with correct image
+                    'assets/images/hotel2.jpg', // Replace with correct image
                     const Hotel2Page(), // Navigate to Hotel2Page
                   ),
                   _buildHotelCard(
-                    'Riverside Luxury Inn',
-                    'Brooklyn, New York',
+                    'Pegasus Reef Hotel',
+                    'Palliyawatta Road, Wattala•0112 049 600',
                     '4.6',
                     '1856 reviews',
                     '\$249',
-                    'assets/images/g.jpeg', // Replace with correct image
+                    'assets/images/hotel3.jpg', // Replace with correct image
                     const Hotel3Page(), // Navigate to Hotel2Page
                   ),
                   // More hotels can be added here

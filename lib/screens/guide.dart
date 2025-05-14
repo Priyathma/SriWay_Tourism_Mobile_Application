@@ -13,36 +13,36 @@ class _GuidePageState extends State<Guide> {
 
   final List<Map<String, String>> guides = [
     {
-      'name': 'John Doe',
-      'location': 'Kandy',
+      'name': 'S. SUDHARSHANA DISSANAYAKE',
+      'location': 'No, 80/1 pepiliyana road, nedimala dehiwala.',
       'rating': '4.8',
       'reviews': '124',
       'price': '\$50/tour',
-      'image': 'assets/images/g.jpeg', // Replace with correct image
+      'image': 'assets/images/g1.jpg', // Replace with correct image
     },
     {
-      'name': 'Jane Smith',
-      'location': 'Galle',
+      'name': 'M.A. ATHULA CHANDRADASA',
+      'location': '122/1, dutugemunu street, kalubowila, dehiwala.',
       'rating': '4.7',
       'reviews': '215',
       'price': '\$55/tour',
-      'image': 'assets/images/g.jpeg', // Replace with correct image
+      'image': 'assets/images/g2.jpg', // Replace with correct image
     },
     {
-      'name': 'Alex Brown',
-      'location': 'Colombo',
+      'name': 'W.VASANTHA PERERA',
+      'location': 'No.7,garamasanwardena road,boralesgamuwa',
       'rating': '4.9',
       'reviews': '130',
       'price': '\$60/tour',
-      'image': 'assets/images/g.jpeg', // Replace with correct image
+      'image': 'assets/images/g3.jpg', // Replace with correct image
     },
     {
-      'name': 'Emily White',
-      'location': 'Sigiriya',
+      'name': 'K.A.S. KUMARA KURUPPU',
+      'location': 'No. 211/391, walawwatta, welipillewa, ganemulla',
       'rating': '4.6',
       'reviews': '95',
       'price': '\$45/tour',
-      'image': 'assets/images/g.jpeg', // Replace with correct image
+      'image': 'assets/images/g4.jpg', // Replace with correct image
     },
     // Add more guides here
   ];
@@ -226,7 +226,7 @@ class _GuidePageState extends State<Guide> {
                   crossAxisCount: 2, // 2 guides per row
                   crossAxisSpacing: 10,
                   mainAxisSpacing: 10,
-                  childAspectRatio: 0.75, // Adjust for better layout
+                  childAspectRatio: 0.64, // Adjust for better layout
                 ),
                 itemCount: guides.length,
                 itemBuilder: (context, index) {
